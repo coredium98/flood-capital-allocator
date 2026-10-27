@@ -1,43 +1,40 @@
-# Python
+# Python bytecode & caches
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
 # Virtual environments
 venv/
 env/
 ENV/
-.venv
+.venv/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
-# Model files (too large for git)
+# Model artifacts (keep knn_model.pkl tracked)
 *.pkl
 !knn_model.pkl
+!models/knn_model.pkl
 *.h5
 *.joblib
 
-# IDE
+# IDE & OS
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Streamlit
+# Streamlit secrets
 .streamlit/secrets.toml
-
-# Data files (if large)
-*.csv
-*.xlsx
-*.parquet
 
 # Logs
 *.log

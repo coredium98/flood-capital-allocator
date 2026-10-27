@@ -1,0 +1,21 @@
+.main-header {
+    font-size: 2.3rem;
+    color: #1f77b4;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #f8fafc;
+    border-radius: 0.5rem !important;
+    border-left: 4px solid #1f77b4 !important;
+    padding: 0.6rem 0.8rem;
+}
+.stAlert {
+    margin-top: 1rem;
+}
+.footer {
+    text-align: center;
+    color: #666;
+    padding: 1rem;
+    font-size: 0.88rem;
+}

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flood-risk-simulator"
+version = "1.0.0"
+description = "Interactive cost-benefit and threshold optimization simulator for flood risk mitigation using K-Nearest Neighbors"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Zacharie Houle, CPA auditeur" }
+]
+dependencies = [
+    "streamlit>=1.40.0,<2.0.0",
+    "pandas>=2.2.0,<3.0.0",
+    "numpy>=2.0.0,<3.0.0",
+    "scikit-learn>=1.7.0,<2.0.0",
+    "matplotlib>=3.9.0,<4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.8.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["flood_risk*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]

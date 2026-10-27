@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "flood-risk-simulator"
+name = "flood-capital-allocator"
 version = "1.0.0"
 description = "Interactive cost-benefit and threshold optimization simulator for flood risk mitigation using K-Nearest Neighbors"
 readme = "README.md"
